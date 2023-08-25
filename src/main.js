@@ -16,10 +16,11 @@ import {
   faNewspaper,
   faExternalLink,
   faCog,
+  faFilter,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faNewspaper, faExternalLink, faCog);
+library.add(faNewspaper, faExternalLink, faCog, faFilter);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

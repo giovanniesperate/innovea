@@ -8,7 +8,10 @@
         </h4>
       </b-col>
       <b-col class="btn-right">
-        <b-button variant="primary" @click="onClickFiltros"> FILTROS </b-button>
+        <b-button variant="primary" @click="onClickFiltros"> 
+          <font-awesome-icon icon="filter" class="mr-1" />
+          FILTROS 
+        </b-button>
       </b-col>
     </b-row>
     <b-row class="mt-1">
