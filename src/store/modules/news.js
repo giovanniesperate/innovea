@@ -21,14 +21,10 @@ const mutations = {
 const actions = {
   async getNewsList({ commit }, { dataInicial, dataFinal }) {
     const params = {
-      q: "tecnologia",
-      language: "pt",
-      from: dataInicial ? dataInicial : undefined,
-      to: dataFinal ? dataFinal : undefined,
-      sortBy: "publishedAt",
-      apiKey: "XXXXXXX",
+      dataInicial: dataInicial ? dataInicial : undefined,
+      dataFinal: dataFinal ? dataFinal : undefined,
     };
-    const { data } = await axios.get("/everything", { params });
+    const { data } = await axios.get("/news", { params });
     commit("setNewsList", data.articles);
     return data;
   },
