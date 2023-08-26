@@ -1,5 +1,5 @@
 export default {
   get apiUrl() {
-    return "http://localhost:3001";
+    return "https://innovea-api.onrender.com";
   },
 };
